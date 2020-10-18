@@ -1,4 +1,9 @@
 
+let covid19;
+
+function preload(){
+  covid19 = loadImage("images/covid19.png");
+}
 
 function setup() {
   // put setup code here to run once
@@ -12,9 +17,15 @@ function setup() {
 
   //changed x, y coordinates to the center of rectangle
   rectMode(CENTER);
+  imageMode(CENTER);
+
+  print(random(300));
 }
 
 function draw() {
+
+  image(covid19, windowWidth/2, windowHeight/2, 100, 100);
+
   fill(120);
   stroke(400);
   strokeWeight(1);
@@ -30,12 +41,12 @@ function draw() {
   stroke(400)
   line(500, 400, 1000, 400);
 
-  fill(0, 75, 200)
+  fill(0, random(200), random(255));
   strokeWeight(1);
   stroke(400);
   rect(700, 400, 50, 500);
 
-  fill(200, 0, 75)
+  fill(random(255), 0, random(200));
   strokeWeight(1);
   stroke(400);
   rect(525, 625, 100, 100);
@@ -48,7 +59,7 @@ function draw() {
   stroke(400)
   line(100, 700, 1100, 75);
 
-  fill(0, 200, 75)
+  fill(0, random(255), random(200));
   strokeWeight(1);
   stroke(400);
   rect(615, 350, 300, 150);
@@ -81,8 +92,9 @@ function draw() {
   stroke(400)
   line(100, 100, 575, 700);
 
+  strokeWeight(random(1,10));
   noFill();
-  circle(100, 100, 150)
+  circle(100, 100, 150);
 
   print(mouseX);
 
