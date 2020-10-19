@@ -8,7 +8,7 @@ let names = ['COVID-19', 'Corona', 'Rona'];
 let randName;
 
 function preload(){
-  covid19 = loadImage("images/covid19.png");
+  covid19 = loadImage("Images/covid19.png");
 
 }
 
