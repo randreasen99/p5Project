@@ -10,33 +10,37 @@
       text-align: center;
       margin: 0;
       color: white;
+      background: black;
     }
-    h2{
+    h1{
       text-align: center;
+      color:rgb(200, 0, 0);
+      font-size: 50px;
+    }
+    p{
+      text-align: center;
+      color:rgb(200, 0, 0);
+      font-size: 20px;
     }
 
     button{
       width: 100px;
       height: 50px;
       color: white;
-      background-color: rgb(200, 10, 100);
+      background-color: rgb(200, 0, 0);
       border: none;
+      filter: drop-shadow(0px 0px 40px red);
     }
 
-    .mountainVid{
-      width: 100px;
-      height: 50px;
-      color: black;
-      background-color: rgb(100, 100, 200);
-    }
   </style>
-  <script src="js/p5.js"></script>
-  <script src="js/p5.sound.min.js"></script>
-  <script src="js/virus.js"></script>
 </head>
 
 <body>
   <main>
+    <h1>Contain the Spread<h1>
+      <p>Click on the red dots to prevent the spread of the virus before the death toll rises...</p>
+      <p>Good luck!</p>
+    <button onClick="window.location.href='/info.html'">Start</button>
   </main>
 </body>
 
