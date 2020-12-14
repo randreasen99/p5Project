@@ -1,4 +1,4 @@
-let amountOfCells = 200;
+let amountOfCells = 150;
 let virus;
 let cells = [];
 
@@ -115,8 +115,8 @@ function newCell(x, y) {
   const cell = {};
   cell.x = x;
   cell.y = y;
-  cell.ySpeed = 4*random();
-  cell.xSpeed = 4*random();
+  cell.ySpeed = 3*random();
+  cell.xSpeed = 3*random();
   cell.infected = 0;
   cell.timeInfected = null;
 
